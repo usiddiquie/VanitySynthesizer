@@ -25,7 +25,7 @@ public:
     void pitchWheelMoved(int newPitchWheelValue) override;
     void controllerMoved(int conrollerNumber, int newControllerValue) override;
     void prepareToPlay(double sampleRate, int samplesPerBlock, int outputChannels);
-    void SynthVoice::updateADSR(const float attack, const float decay, const float sustain, const float release);
+    void updateADSR(const float attack, const float decay, const float sustain, const float release);
     void renderNextBlock(juce::AudioBuffer<float>& outputBuffer, int startSample, int numSamples) override;
     void updateFilter(const int filterType, const float filterCutoff, const float filterRes);
     void updateModADSR(const float attack, const float decay, const float sustain, const float release);

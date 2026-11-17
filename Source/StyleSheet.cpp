@@ -12,8 +12,8 @@
 
 void CustomLNF::drawRotarySlider(juce::Graphics& g, int x, int y, int width, int height, float sliderPos, float rotaryStartAngle, float rotaryEndAngle, juce::Slider& slider)
 {
-    auto outline = juce::Colour::Colour(24, 24, 24);
-    auto fill = juce::Colour::Colour(255, 73, 99);
+    auto outline = juce::Colour(24, 24, 24);
+    auto fill = juce::Colour(255, 73, 99);
 
     auto bounds = juce::Rectangle<int>(x, y + 24, width, height).toFloat().reduced(12);
 
